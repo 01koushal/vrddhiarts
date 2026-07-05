@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { AtSign, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import InstagramIcon from '../ui/InstagramIcon'
 import { Link, NavLink } from 'react-router-dom'
 import { siteConfig } from '../../config/siteConfig'
 
@@ -28,7 +29,7 @@ function Navbar() {
             </NavLink>
           ))}
           <a className="icon-link" href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram">
-            <AtSign size={18} />
+            <InstagramIcon size={18} />
           </a>
         </div>
 
@@ -45,7 +46,7 @@ function Navbar() {
             </NavLink>
           ))}
           <a href={siteConfig.instagramUrl} target="_blank" rel="noreferrer">
-            Instagram
+            Contact on Instagram
           </a>
         </div>
       )}

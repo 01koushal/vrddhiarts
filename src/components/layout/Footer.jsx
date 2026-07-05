@@ -1,10 +1,9 @@
-import { AtSign, Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
+import InstagramIcon from '../ui/InstagramIcon'
 import { Link } from 'react-router-dom'
 import { siteConfig } from '../../config/siteConfig'
 
 function Footer() {
-  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}`
-
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
@@ -23,9 +22,6 @@ function Footer() {
 
         <div>
           <h3>Contact</h3>
-          <a href={whatsappUrl} target="_blank" rel="noreferrer">
-            <MessageCircle size={16} /> WhatsApp
-          </a>
           <a href={`tel:${siteConfig.phone}`}>
             <Phone size={16} /> {siteConfig.phone}
           </a>
@@ -40,17 +36,18 @@ function Footer() {
         <div>
           <h3>Social</h3>
           <a href={siteConfig.instagramUrl} target="_blank" rel="noreferrer">
-            <AtSign size={16} /> Instagram
+            <InstagramIcon size={16} /> Contact on Instagram
           </a>
           {siteConfig.businessHours.map((line) => (
             <span key={line}>{line}</span>
           ))}
         </div>
       </div>
-      <div className="footer-bottom">© {new Date().getFullYear()} {siteConfig.businessName}. All rights reserved.</div>
+      <div className="footer-bottom">(c) {new Date().getFullYear()} {siteConfig.businessName}. All rights reserved.</div>
     </footer>
   )
 }
 
 export default Footer
+
 

@@ -1,4 +1,4 @@
-import { MessageCircle } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import ArtworkImage from './ArtworkImage'
 
@@ -10,7 +10,7 @@ function ProductCard({ product }) {
         <h3>{product.title}</h3>
         <p>Contact us for pricing</p>
         <span>
-          <MessageCircle size={16} aria-hidden="true" />
+          <ArrowUpRight size={16} aria-hidden="true" />
           Price on request
         </span>
       </div>

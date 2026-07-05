@@ -1,4 +1,5 @@
-import { Gem, Heart, MessageCircle, Sparkles } from 'lucide-react'
+import { Gem, Heart, Sparkles } from 'lucide-react'
+import InstagramIcon from '../components/ui/InstagramIcon'
 import Button from '../components/ui/Button'
 import CategoryCard from '../components/ui/CategoryCard'
 import ProductCard from '../components/ui/ProductCard'
@@ -7,8 +8,6 @@ import { siteConfig } from '../config/siteConfig'
 import { getFeaturedCategories, getFeaturedProducts } from '../utils/catalog'
 
 function Home() {
-  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}`
-
   return (
     <>
       <section className="hero">
@@ -19,8 +18,8 @@ function Home() {
             <p>{siteConfig.tagline}</p>
             <div className="hero-actions">
               <Button to="/collections">Explore Collections</Button>
-              <Button href={whatsappUrl} target="_blank" rel="noreferrer" variant="secondary">
-                <MessageCircle size={18} /> WhatsApp
+              <Button href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" variant="secondary">
+                <InstagramIcon size={18} /> Contact on Instagram
               </Button>
             </div>
           </div>
@@ -101,7 +100,9 @@ function Home() {
             <p>Share the occasion, artwork type, and any reference details. Pricing is always shared on request.</p>
           </div>
           <div className="cta-actions">
-            <Button href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" variant="secondary">Instagram</Button>
+            <Button href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" variant="secondary">
+              <InstagramIcon size={18} /> Contact on Instagram
+            </Button>
             <Button to="/contact">Contact Us</Button>
           </div>
         </div>
@@ -111,3 +112,4 @@ function Home() {
 }
 
 export default Home
+
