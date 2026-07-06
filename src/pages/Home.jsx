@@ -66,7 +66,7 @@ function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy reveal">
-            <span className="eyebrow">Handmade Resin Art</span>
+            <span className="eyebrow">Handmade Art</span>
             <h1>Vrddhi Arts</h1>
             <p>Made by Hand. Meant for the Heart.</p>
             <div className="hero-actions">
@@ -80,7 +80,7 @@ function Home() {
             <div className="hero-mark">VA</div>
             <div>
               <span>Custom made</span>
-              <strong>Preserved memories in resin</strong>
+              <strong>Designed exclusively for you, with your story at the heart of every creation.</strong>
             </div>
           </div>
         </div>
