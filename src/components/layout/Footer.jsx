@@ -40,8 +40,7 @@ function Footer() {
           ))}
         </div>
       </div>
-      <div className="footer-bottom">(c) {new Date().getFullYear()} {siteConfig.businessName}. All rights reserved.</div>
-    </footer>
+      </footer>
   )
 }
 
