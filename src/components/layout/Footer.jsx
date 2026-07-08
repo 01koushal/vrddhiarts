@@ -1,6 +1,7 @@
 import InstagramIcon from '../ui/InstagramIcon'
 import { Link } from 'react-router-dom'
 import { siteConfig } from '../../config/siteConfig'
+import MailIcon from '../ui/MailIcon'
 
 function Footer() {
   return (
@@ -23,6 +24,10 @@ function Footer() {
           <a href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" className="footer-social-link">
             <InstagramIcon size={16} /> Contact on Instagram
           </a>
+          <a href={`mailto:${siteConfig.email}`} className="footer-social-link">
+            <MailIcon size={16} /> Contact via Email
+          </a>
+
           {siteConfig.businessHours.map((line) => (
             <span key={line} className="footer-hours-line">{line}</span>
           ))}
